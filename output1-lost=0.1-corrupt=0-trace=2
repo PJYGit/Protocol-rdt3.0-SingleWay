@@ -1,0 +1,1161 @@
+Network Simulator
+Initializing Network Simulator
+Initializing sender: A: 12345
+Initializing receiver: B: 67890
+average = 0.5033190011370157
+generateNextArrival(): time is 0.0
+generateNextArrival(): future time for event 1 at entity 12345 will be 319.769522450404
+---------------------------------------
+
+EVENT time: 319.769522450404
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data aaaaaaaaaaaaaaaaaaaa
+udtSend: seqNum: 0 ackNum: 0 checksum: 1940 payload: aaaaaaaaaaaaaaaaaaaa
+udtSend: Scheduling arrival on other side: at time   322.0687753453662
+startTimer: starting timer at 319.769522450404
+generateNextArrival(): time is 319.769522450404
+generateNextArrival(): future time for event 1 at entity 12345 will be 1770.2799531429464
+---------------------------------------
+
+EVENT time: 322.0687753453662
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement aaaaaaaaaaaaaaaaaaaa
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   330.35698544772225
+---------------------------------------
+
+EVENT time: 330.35698544772225
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 330.35698544772225
+---------------------------------------
+
+EVENT time: 1770.2799531429464
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data bbbbbbbbbbbbbbbbbbbb
+udtSend: seqNum: 1 ackNum: 0 checksum: 1961 payload: bbbbbbbbbbbbbbbbbbbb
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 1770.2799531429464
+generateNextArrival(): time is 1770.2799531429464
+generateNextArrival(): future time for event 1 at entity 12345 will be 2609.609619022865
+---------------------------------------
+
+EVENT time: 1810.2799531429464
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 1961 payload: bbbbbbbbbbbbbbbbbbbb
+udtSend: Scheduling arrival on other side: at time   1818.1734836943895
+startTimer: starting timer at 1810.2799531429464
+---------------------------------------
+
+EVENT time: 1818.1734836943895
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement bbbbbbbbbbbbbbbbbbbb
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: SIMULATING PACKET LOSS
+---------------------------------------
+
+EVENT time: 1850.2799531429464
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 1961 payload: bbbbbbbbbbbbbbbbbbbb
+udtSend: Scheduling arrival on other side: at time   1858.865643589135
+startTimer: starting timer at 1850.2799531429464
+---------------------------------------
+
+EVENT time: 1858.865643589135
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement bbbbbbbbbbbbbbbbbbbb
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   1862.4019359702818
+---------------------------------------
+
+EVENT time: 1862.4019359702818
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 1862.4019359702818
+---------------------------------------
+
+EVENT time: 2609.609619022865
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data cccccccccccccccccccc
+udtSend: seqNum: 0 ackNum: 0 checksum: 1980 payload: cccccccccccccccccccc
+udtSend: Scheduling arrival on other side: at time   2610.7880122048928
+startTimer: starting timer at 2609.609619022865
+generateNextArrival(): time is 2609.609619022865
+generateNextArrival(): future time for event 1 at entity 12345 will be 3825.796935459376
+---------------------------------------
+
+EVENT time: 2610.7880122048928
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement cccccccccccccccccccc
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   2618.3096512231305
+---------------------------------------
+
+EVENT time: 2618.3096512231305
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 2618.3096512231305
+---------------------------------------
+
+EVENT time: 3825.796935459376
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data dddddddddddddddddddd
+udtSend: seqNum: 1 ackNum: 0 checksum: 2001 payload: dddddddddddddddddddd
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 3825.796935459376
+generateNextArrival(): time is 3825.796935459376
+generateNextArrival(): future time for event 1 at entity 12345 will be 5052.440291311386
+---------------------------------------
+
+EVENT time: 3865.796935459376
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2001 payload: dddddddddddddddddddd
+udtSend: Scheduling arrival on other side: at time   3869.6824066949193
+startTimer: starting timer at 3865.796935459376
+---------------------------------------
+
+EVENT time: 3869.6824066949193
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement dddddddddddddddddddd
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   3873.7838652735086
+---------------------------------------
+
+EVENT time: 3873.7838652735086
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 3873.7838652735086
+---------------------------------------
+
+EVENT time: 5052.440291311386
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data eeeeeeeeeeeeeeeeeeee
+udtSend: seqNum: 0 ackNum: 0 checksum: 2020 payload: eeeeeeeeeeeeeeeeeeee
+udtSend: Scheduling arrival on other side: at time   5058.345306826578
+startTimer: starting timer at 5052.440291311386
+generateNextArrival(): time is 5052.440291311386
+generateNextArrival(): future time for event 1 at entity 12345 will be 6575.141459021701
+---------------------------------------
+
+EVENT time: 5058.345306826578
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement eeeeeeeeeeeeeeeeeeee
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   5063.157559572656
+---------------------------------------
+
+EVENT time: 5063.157559572656
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 5063.157559572656
+---------------------------------------
+
+EVENT time: 6575.141459021701
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data ffffffffffffffffffff
+udtSend: seqNum: 1 ackNum: 0 checksum: 2041 payload: ffffffffffffffffffff
+udtSend: Scheduling arrival on other side: at time   6585.025699602295
+startTimer: starting timer at 6575.141459021701
+generateNextArrival(): time is 6575.141459021701
+generateNextArrival(): future time for event 1 at entity 12345 will be 7223.0995138663575
+---------------------------------------
+
+EVENT time: 6585.025699602295
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement ffffffffffffffffffff
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   6588.878376648334
+---------------------------------------
+
+EVENT time: 6588.878376648334
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 6588.878376648334
+---------------------------------------
+
+EVENT time: 7223.0995138663575
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data gggggggggggggggggggg
+udtSend: seqNum: 0 ackNum: 0 checksum: 2060 payload: gggggggggggggggggggg
+udtSend: Scheduling arrival on other side: at time   7230.35487274564
+startTimer: starting timer at 7223.0995138663575
+generateNextArrival(): time is 7223.0995138663575
+generateNextArrival(): future time for event 1 at entity 12345 will be 8192.59247778625
+---------------------------------------
+
+EVENT time: 7230.35487274564
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement gggggggggggggggggggg
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   7235.392756748488
+---------------------------------------
+
+EVENT time: 7235.392756748488
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 7235.392756748488
+---------------------------------------
+
+EVENT time: 8192.59247778625
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data hhhhhhhhhhhhhhhhhhhh
+udtSend: seqNum: 1 ackNum: 0 checksum: 2081 payload: hhhhhhhhhhhhhhhhhhhh
+udtSend: Scheduling arrival on other side: at time   8195.12643782085
+startTimer: starting timer at 8192.59247778625
+generateNextArrival(): time is 8192.59247778625
+generateNextArrival(): future time for event 1 at entity 12345 will be 8673.997999737778
+---------------------------------------
+
+EVENT time: 8195.12643782085
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement hhhhhhhhhhhhhhhhhhhh
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   8197.073648638478
+---------------------------------------
+
+EVENT time: 8197.073648638478
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 8197.073648638478
+---------------------------------------
+
+EVENT time: 8673.997999737778
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data iiiiiiiiiiiiiiiiiiii
+udtSend: seqNum: 0 ackNum: 0 checksum: 2100 payload: iiiiiiiiiiiiiiiiiiii
+udtSend: Scheduling arrival on other side: at time   8679.835586736126
+startTimer: starting timer at 8673.997999737778
+generateNextArrival(): time is 8673.997999737778
+generateNextArrival(): future time for event 1 at entity 12345 will be 9891.688949943906
+---------------------------------------
+
+EVENT time: 8679.835586736126
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement iiiiiiiiiiiiiiiiiiii
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   8687.250238590032
+---------------------------------------
+
+EVENT time: 8687.250238590032
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 8687.250238590032
+---------------------------------------
+
+EVENT time: 9891.688949943906
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data jjjjjjjjjjjjjjjjjjjj
+udtSend: seqNum: 1 ackNum: 0 checksum: 2121 payload: jjjjjjjjjjjjjjjjjjjj
+udtSend: Scheduling arrival on other side: at time   9896.905039946394
+startTimer: starting timer at 9891.688949943906
+generateNextArrival(): time is 9891.688949943906
+generateNextArrival(): future time for event 1 at entity 12345 will be 10174.028160871128
+---------------------------------------
+
+EVENT time: 9896.905039946394
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement jjjjjjjjjjjjjjjjjjjj
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   9904.84373937085
+---------------------------------------
+
+EVENT time: 9904.84373937085
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 9904.84373937085
+---------------------------------------
+
+EVENT time: 10174.028160871128
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data kkkkkkkkkkkkkkkkkkkk
+udtSend: seqNum: 0 ackNum: 0 checksum: 2140 payload: kkkkkkkkkkkkkkkkkkkk
+udtSend: Scheduling arrival on other side: at time   10175.548405697176
+startTimer: starting timer at 10174.028160871128
+generateNextArrival(): time is 10174.028160871128
+generateNextArrival(): future time for event 1 at entity 12345 will be 11473.00547295418
+---------------------------------------
+
+EVENT time: 10175.548405697176
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement kkkkkkkkkkkkkkkkkkkk
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   10178.668327617603
+---------------------------------------
+
+EVENT time: 10178.668327617603
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 10178.668327617603
+---------------------------------------
+
+EVENT time: 11473.00547295418
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data llllllllllllllllllll
+udtSend: seqNum: 1 ackNum: 0 checksum: 2161 payload: llllllllllllllllllll
+udtSend: Scheduling arrival on other side: at time   11482.95361633839
+startTimer: starting timer at 11473.00547295418
+generateNextArrival(): time is 11473.00547295418
+generateNextArrival(): future time for event 1 at entity 12345 will be 11620.214265173958
+---------------------------------------
+
+EVENT time: 11482.95361633839
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement llllllllllllllllllll
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   11484.499948391545
+---------------------------------------
+
+EVENT time: 11484.499948391545
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 11484.499948391545
+---------------------------------------
+
+EVENT time: 11620.214265173958
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data mmmmmmmmmmmmmmmmmmmm
+udtSend: seqNum: 0 ackNum: 0 checksum: 2180 payload: mmmmmmmmmmmmmmmmmmmm
+udtSend: Scheduling arrival on other side: at time   11630.006429286233
+startTimer: starting timer at 11620.214265173958
+generateNextArrival(): time is 11620.214265173958
+generateNextArrival(): future time for event 1 at entity 12345 will be 13542.550345829444
+---------------------------------------
+
+EVENT time: 11630.006429286233
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement mmmmmmmmmmmmmmmmmmmm
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   11638.810385064371
+---------------------------------------
+
+EVENT time: 11638.810385064371
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 11638.810385064371
+---------------------------------------
+
+EVENT time: 13542.550345829444
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data nnnnnnnnnnnnnnnnnnnn
+udtSend: seqNum: 1 ackNum: 0 checksum: 2201 payload: nnnnnnnnnnnnnnnnnnnn
+udtSend: Scheduling arrival on other side: at time   13549.31386037192
+startTimer: starting timer at 13542.550345829444
+generateNextArrival(): time is 13542.550345829444
+generateNextArrival(): future time for event 1 at entity 12345 will be 15356.745723540074
+---------------------------------------
+
+EVENT time: 13549.31386037192
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement nnnnnnnnnnnnnnnnnnnn
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   13551.796992039686
+---------------------------------------
+
+EVENT time: 13551.796992039686
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 13551.796992039686
+---------------------------------------
+
+EVENT time: 15356.745723540074
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data oooooooooooooooooooo
+udtSend: seqNum: 0 ackNum: 0 checksum: 2220 payload: oooooooooooooooooooo
+udtSend: Scheduling arrival on other side: at time   15362.603937664213
+startTimer: starting timer at 15356.745723540074
+generateNextArrival(): time is 15356.745723540074
+generateNextArrival(): future time for event 1 at entity 12345 will be 17269.632707228186
+---------------------------------------
+
+EVENT time: 15362.603937664213
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement oooooooooooooooooooo
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   15367.809280815634
+---------------------------------------
+
+EVENT time: 15367.809280815634
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 15367.809280815634
+---------------------------------------
+
+EVENT time: 17269.632707228186
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data pppppppppppppppppppp
+udtSend: seqNum: 1 ackNum: 0 checksum: 2241 payload: pppppppppppppppppppp
+udtSend: Scheduling arrival on other side: at time   17274.650547821504
+startTimer: starting timer at 17269.632707228186
+generateNextArrival(): time is 17269.632707228186
+generateNextArrival(): future time for event 1 at entity 12345 will be 17270.732611771647
+---------------------------------------
+
+EVENT time: 17270.732611771647
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data qqqqqqqqqqqqqqqqqqqq
+generateNextArrival(): time is 17270.732611771647
+generateNextArrival(): future time for event 1 at entity 12345 will be 17276.560787637398
+---------------------------------------
+
+EVENT time: 17274.650547821504
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement pppppppppppppppppppp
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   17281.139737615187
+---------------------------------------
+
+EVENT time: 17276.560787637398
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data rrrrrrrrrrrrrrrrrrrr
+generateNextArrival(): time is 17276.560787637398
+generateNextArrival(): future time for event 1 at entity 12345 will be 18098.175564203975
+---------------------------------------
+
+EVENT time: 17281.139737615187
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 17281.139737615187
+---------------------------------------
+
+EVENT time: 18098.175564203975
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data ssssssssssssssssssss
+udtSend: seqNum: 0 ackNum: 0 checksum: 2300 payload: ssssssssssssssssssss
+udtSend: Scheduling arrival on other side: at time   18106.940359328095
+startTimer: starting timer at 18098.175564203975
+generateNextArrival(): time is 18098.175564203975
+generateNextArrival(): future time for event 1 at entity 12345 will be 18786.194856869766
+---------------------------------------
+
+EVENT time: 18106.940359328095
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement ssssssssssssssssssss
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   18113.635939999942
+---------------------------------------
+
+EVENT time: 18113.635939999942
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 18113.635939999942
+---------------------------------------
+
+EVENT time: 18786.194856869766
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data tttttttttttttttttttt
+udtSend: seqNum: 1 ackNum: 0 checksum: 2321 payload: tttttttttttttttttttt
+udtSend: Scheduling arrival on other side: at time   18787.592057715574
+startTimer: starting timer at 18786.194856869766
+generateNextArrival(): time is 18786.194856869766
+generateNextArrival(): future time for event 1 at entity 12345 will be 20451.109140834265
+---------------------------------------
+
+EVENT time: 18787.592057715574
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement tttttttttttttttttttt
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   18789.16972934435
+---------------------------------------
+
+EVENT time: 18789.16972934435
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 18789.16972934435
+---------------------------------------
+
+EVENT time: 20451.109140834265
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data uuuuuuuuuuuuuuuuuuuu
+udtSend: seqNum: 0 ackNum: 0 checksum: 2340 payload: uuuuuuuuuuuuuuuuuuuu
+udtSend: Scheduling arrival on other side: at time   20459.23142954993
+startTimer: starting timer at 20451.109140834265
+generateNextArrival(): time is 20451.109140834265
+generateNextArrival(): future time for event 1 at entity 12345 will be 21808.826883488808
+---------------------------------------
+
+EVENT time: 20459.23142954993
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement uuuuuuuuuuuuuuuuuuuu
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   20466.064064513637
+---------------------------------------
+
+EVENT time: 20466.064064513637
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 20466.064064513637
+---------------------------------------
+
+EVENT time: 21808.826883488808
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data vvvvvvvvvvvvvvvvvvvv
+udtSend: seqNum: 1 ackNum: 0 checksum: 2361 payload: vvvvvvvvvvvvvvvvvvvv
+udtSend: Scheduling arrival on other side: at time   21811.868733129064
+startTimer: starting timer at 21808.826883488808
+generateNextArrival(): time is 21808.826883488808
+generateNextArrival(): future time for event 1 at entity 12345 will be 22415.42520471952
+---------------------------------------
+
+EVENT time: 21811.868733129064
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement vvvvvvvvvvvvvvvvvvvv
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: SIMULATING PACKET LOSS
+---------------------------------------
+
+EVENT time: 21848.826883488808
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2361 payload: vvvvvvvvvvvvvvvvvvvv
+udtSend: Scheduling arrival on other side: at time   21849.903798187348
+startTimer: starting timer at 21848.826883488808
+---------------------------------------
+
+EVENT time: 21849.903798187348
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement vvvvvvvvvvvvvvvvvvvv
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   21859.02626576208
+---------------------------------------
+
+EVENT time: 21859.02626576208
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 21859.02626576208
+---------------------------------------
+
+EVENT time: 22415.42520471952
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data wwwwwwwwwwwwwwwwwwww
+udtSend: seqNum: 0 ackNum: 0 checksum: 2380 payload: wwwwwwwwwwwwwwwwwwww
+udtSend: Scheduling arrival on other side: at time   22424.799847350718
+startTimer: starting timer at 22415.42520471952
+generateNextArrival(): time is 22415.42520471952
+generateNextArrival(): future time for event 1 at entity 12345 will be 24391.44449901948
+---------------------------------------
+
+EVENT time: 22424.799847350718
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement wwwwwwwwwwwwwwwwwwww
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   22430.770962592294
+---------------------------------------
+
+EVENT time: 22430.770962592294
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 22430.770962592294
+---------------------------------------
+
+EVENT time: 24391.44449901948
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data xxxxxxxxxxxxxxxxxxxx
+udtSend: seqNum: 1 ackNum: 0 checksum: 2401 payload: xxxxxxxxxxxxxxxxxxxx
+udtSend: Scheduling arrival on other side: at time   24393.3771978696
+startTimer: starting timer at 24391.44449901948
+generateNextArrival(): time is 24391.44449901948
+generateNextArrival(): future time for event 1 at entity 12345 will be 25211.69816065975
+---------------------------------------
+
+EVENT time: 24393.3771978696
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement xxxxxxxxxxxxxxxxxxxx
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   24401.474279988055
+---------------------------------------
+
+EVENT time: 24401.474279988055
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 24401.474279988055
+---------------------------------------
+
+EVENT time: 25211.69816065975
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data yyyyyyyyyyyyyyyyyyyy
+udtSend: seqNum: 0 ackNum: 0 checksum: 2420 payload: yyyyyyyyyyyyyyyyyyyy
+udtSend: Scheduling arrival on other side: at time   25219.243433771615
+startTimer: starting timer at 25211.69816065975
+generateNextArrival(): time is 25211.69816065975
+generateNextArrival(): future time for event 1 at entity 12345 will be 25877.8096746686
+---------------------------------------
+
+EVENT time: 25219.243433771615
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement yyyyyyyyyyyyyyyyyyyy
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   25224.159994472713
+---------------------------------------
+
+EVENT time: 25224.159994472713
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 25224.159994472713
+---------------------------------------
+
+EVENT time: 25877.8096746686
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data zzzzzzzzzzzzzzzzzzzz
+udtSend: seqNum: 1 ackNum: 0 checksum: 2441 payload: zzzzzzzzzzzzzzzzzzzz
+udtSend: Scheduling arrival on other side: at time   25882.746787566808
+startTimer: starting timer at 25877.8096746686
+generateNextArrival(): time is 25877.8096746686
+generateNextArrival(): future time for event 1 at entity 12345 will be 26877.71029243985
+---------------------------------------
+
+EVENT time: 25882.746787566808
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement zzzzzzzzzzzzzzzzzzzz
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   25884.43624599193
+---------------------------------------
+
+EVENT time: 25884.43624599193
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 25884.43624599193
+---------------------------------------
+
+EVENT time: 26877.71029243985
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data aaaaaaaaaaaaaaaaaaaa
+udtSend: seqNum: 0 ackNum: 0 checksum: 1940 payload: aaaaaaaaaaaaaaaaaaaa
+udtSend: Scheduling arrival on other side: at time   26885.174575600762
+startTimer: starting timer at 26877.71029243985
+generateNextArrival(): time is 26877.71029243985
+generateNextArrival(): future time for event 1 at entity 12345 will be 27411.801874599012
+---------------------------------------
+
+EVENT time: 26885.174575600762
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement aaaaaaaaaaaaaaaaaaaa
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   26890.96346733469
+---------------------------------------
+
+EVENT time: 26890.96346733469
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 26890.96346733469
+---------------------------------------
+
+EVENT time: 27411.801874599012
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data bbbbbbbbbbbbbbbbbbbb
+udtSend: seqNum: 1 ackNum: 0 checksum: 1961 payload: bbbbbbbbbbbbbbbbbbbb
+udtSend: Scheduling arrival on other side: at time   27416.640662459962
+startTimer: starting timer at 27411.801874599012
+generateNextArrival(): time is 27411.801874599012
+generateNextArrival(): future time for event 1 at entity 12345 will be 28082.030292627987
+---------------------------------------
+
+EVENT time: 27416.640662459962
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement bbbbbbbbbbbbbbbbbbbb
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   27423.186948237493
+---------------------------------------
+
+EVENT time: 27423.186948237493
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 27423.186948237493
+---------------------------------------
+
+EVENT time: 28082.030292627987
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data cccccccccccccccccccc
+udtSend: seqNum: 0 ackNum: 0 checksum: 1980 payload: cccccccccccccccccccc
+udtSend: Scheduling arrival on other side: at time   28085.97157060151
+startTimer: starting timer at 28082.030292627987
+generateNextArrival(): time is 28082.030292627987
+generateNextArrival(): future time for event 1 at entity 12345 will be 29666.74753866693
+---------------------------------------
+
+EVENT time: 28085.97157060151
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement cccccccccccccccccccc
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   28091.75236722038
+---------------------------------------
+
+EVENT time: 28091.75236722038
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 28091.75236722038
+---------------------------------------
+
+EVENT time: 29666.74753866693
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data dddddddddddddddddddd
+udtSend: seqNum: 1 ackNum: 0 checksum: 2001 payload: dddddddddddddddddddd
+udtSend: Scheduling arrival on other side: at time   29671.675380148605
+startTimer: starting timer at 29666.74753866693
+generateNextArrival(): time is 29666.74753866693
+generateNextArrival(): future time for event 1 at entity 12345 will be 30188.07703321415
+---------------------------------------
+
+EVENT time: 29671.675380148605
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement dddddddddddddddddddd
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   29681.619273887307
+---------------------------------------
+
+EVENT time: 29681.619273887307
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 29681.619273887307
+---------------------------------------
+
+EVENT time: 30188.07703321415
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data eeeeeeeeeeeeeeeeeeee
+udtSend: seqNum: 0 ackNum: 0 checksum: 2020 payload: eeeeeeeeeeeeeeeeeeee
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 30188.07703321415
+generateNextArrival(): time is 30188.07703321415
+generateNextArrival(): future time for event 1 at entity 12345 will be 31331.261193899252
+---------------------------------------
+
+EVENT time: 30228.07703321415
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 0 ackNum: 0 checksum: 2020 payload: eeeeeeeeeeeeeeeeeeee
+udtSend: Scheduling arrival on other side: at time   30233.22468305288
+startTimer: starting timer at 30228.07703321415
+---------------------------------------
+
+EVENT time: 30233.22468305288
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement eeeeeeeeeeeeeeeeeeee
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   30239.33351897109
+---------------------------------------
+
+EVENT time: 30239.33351897109
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 30239.33351897109
+---------------------------------------
+
+EVENT time: 31331.261193899252
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data ffffffffffffffffffff
+udtSend: seqNum: 1 ackNum: 0 checksum: 2041 payload: ffffffffffffffffffff
+udtSend: Scheduling arrival on other side: at time   31339.484397036667
+startTimer: starting timer at 31331.261193899252
+generateNextArrival(): time is 31331.261193899252
+generateNextArrival(): future time for event 1 at entity 12345 will be 31866.01945140157
+---------------------------------------
+
+EVENT time: 31339.484397036667
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement ffffffffffffffffffff
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   31347.5971040896
+---------------------------------------
+
+EVENT time: 31347.5971040896
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 31347.5971040896
+---------------------------------------
+
+EVENT time: 31866.01945140157
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data gggggggggggggggggggg
+udtSend: seqNum: 0 ackNum: 0 checksum: 2060 payload: gggggggggggggggggggg
+udtSend: Scheduling arrival on other side: at time   31871.239989853537
+startTimer: starting timer at 31866.01945140157
+generateNextArrival(): time is 31866.01945140157
+generateNextArrival(): future time for event 1 at entity 12345 will be 32509.78246841337
+---------------------------------------
+
+EVENT time: 31871.239989853537
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement gggggggggggggggggggg
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   31878.582638604
+---------------------------------------
+
+EVENT time: 31878.582638604
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 31878.582638604
+---------------------------------------
+
+EVENT time: 32509.78246841337
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data hhhhhhhhhhhhhhhhhhhh
+udtSend: seqNum: 1 ackNum: 0 checksum: 2081 payload: hhhhhhhhhhhhhhhhhhhh
+udtSend: Scheduling arrival on other side: at time   32515.632743187056
+startTimer: starting timer at 32509.78246841337
+generateNextArrival(): time is 32509.78246841337
+generateNextArrival(): future time for event 1 at entity 12345 will be 34163.350818536
+---------------------------------------
+
+EVENT time: 32515.632743187056
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement hhhhhhhhhhhhhhhhhhhh
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   32518.975202223424
+---------------------------------------
+
+EVENT time: 32518.975202223424
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 32518.975202223424
+---------------------------------------
+
+EVENT time: 34163.350818536
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data iiiiiiiiiiiiiiiiiiii
+udtSend: seqNum: 0 ackNum: 0 checksum: 2100 payload: iiiiiiiiiiiiiiiiiiii
+udtSend: Scheduling arrival on other side: at time   34167.10937076785
+startTimer: starting timer at 34163.350818536
+generateNextArrival(): time is 34163.350818536
+generateNextArrival(): future time for event 1 at entity 12345 will be 34897.217094918036
+---------------------------------------
+
+EVENT time: 34167.10937076785
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement iiiiiiiiiiiiiiiiiiii
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   34173.92600305439
+---------------------------------------
+
+EVENT time: 34173.92600305439
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 34173.92600305439
+---------------------------------------
+
+EVENT time: 34897.217094918036
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data jjjjjjjjjjjjjjjjjjjj
+udtSend: seqNum: 1 ackNum: 0 checksum: 2121 payload: jjjjjjjjjjjjjjjjjjjj
+udtSend: Scheduling arrival on other side: at time   34905.5131392594
+startTimer: starting timer at 34897.217094918036
+generateNextArrival(): time is 34897.217094918036
+generateNextArrival(): future time for event 1 at entity 12345 will be 36542.020481663036
+---------------------------------------
+
+EVENT time: 34905.5131392594
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement jjjjjjjjjjjjjjjjjjjj
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: SIMULATING PACKET LOSS
+---------------------------------------
+
+EVENT time: 34937.217094918036
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2121 payload: jjjjjjjjjjjjjjjjjjjj
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 34937.217094918036
+---------------------------------------
+
+EVENT time: 34977.217094918036
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2121 payload: jjjjjjjjjjjjjjjjjjjj
+udtSend: Scheduling arrival on other side: at time   34981.87110734287
+startTimer: starting timer at 34977.217094918036
+---------------------------------------
+
+EVENT time: 34981.87110734287
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement jjjjjjjjjjjjjjjjjjjj
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   34984.94420015602
+---------------------------------------
+
+EVENT time: 34984.94420015602
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 34984.94420015602
+---------------------------------------
+
+EVENT time: 36542.020481663036
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data kkkkkkkkkkkkkkkkkkkk
+udtSend: seqNum: 0 ackNum: 0 checksum: 2140 payload: kkkkkkkkkkkkkkkkkkkk
+udtSend: Scheduling arrival on other side: at time   36550.35297275779
+startTimer: starting timer at 36542.020481663036
+generateNextArrival(): time is 36542.020481663036
+generateNextArrival(): future time for event 1 at entity 12345 will be 38231.471300239304
+---------------------------------------
+
+EVENT time: 36550.35297275779
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement kkkkkkkkkkkkkkkkkkkk
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   36556.42885772491
+---------------------------------------
+
+EVENT time: 36556.42885772491
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 36556.42885772491
+---------------------------------------
+
+EVENT time: 38231.471300239304
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data llllllllllllllllllll
+udtSend: seqNum: 1 ackNum: 0 checksum: 2161 payload: llllllllllllllllllll
+udtSend: SIMULATING PACKET LOSS
+startTimer: starting timer at 38231.471300239304
+generateNextArrival(): time is 38231.471300239304
+generateNextArrival(): future time for event 1 at entity 12345 will be 38643.551378331016
+---------------------------------------
+
+EVENT time: 38271.471300239304
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2161 payload: llllllllllllllllllll
+udtSend: Scheduling arrival on other side: at time   38280.08964017622
+startTimer: starting timer at 38271.471300239304
+---------------------------------------
+
+EVENT time: 38280.08964017622
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement llllllllllllllllllll
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: SIMULATING PACKET LOSS
+---------------------------------------
+
+EVENT time: 38311.471300239304
+Event type:  TIMERINTERRUPT 
+Event entity: 12345
+A: sending the last packet again
+udtSend: seqNum: 1 ackNum: 0 checksum: 2161 payload: llllllllllllllllllll
+udtSend: Scheduling arrival on other side: at time   38315.00054608786
+startTimer: starting timer at 38311.471300239304
+---------------------------------------
+
+EVENT time: 38315.00054608786
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement llllllllllllllllllll
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   38322.797688206396
+---------------------------------------
+
+EVENT time: 38322.797688206396
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 38322.797688206396
+---------------------------------------
+
+EVENT time: 38643.551378331016
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data mmmmmmmmmmmmmmmmmmmm
+udtSend: seqNum: 0 ackNum: 0 checksum: 2180 payload: mmmmmmmmmmmmmmmmmmmm
+udtSend: Scheduling arrival on other side: at time   38649.24834229911
+startTimer: starting timer at 38643.551378331016
+generateNextArrival(): time is 38643.551378331016
+generateNextArrival(): future time for event 1 at entity 12345 will be 40136.36957046015
+---------------------------------------
+
+EVENT time: 38649.24834229911
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement mmmmmmmmmmmmmmmmmmmm
+B: deliverData: data received at 67890:
+udtSend: seqNum: 0 ackNum: 1 checksum: 1 payload: 
+udtSend: Scheduling arrival on other side: at time   38658.006271073486
+---------------------------------------
+
+EVENT time: 38658.006271073486
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 38658.006271073486
+---------------------------------------
+
+EVENT time: 40136.36957046015
+Event type:  FROMAPP
+Event entity: 12345
+A: Sending the data nnnnnnnnnnnnnnnnnnnn
+udtSend: seqNum: 1 ackNum: 0 checksum: 2201 payload: nnnnnnnnnnnnnnnnnnnn
+udtSend: Scheduling arrival on other side: at time   40143.20087343579
+startTimer: starting timer at 40136.36957046015
+do not schedule: the maximum number of messages is scheduled
+---------------------------------------
+
+EVENT time: 40143.20087343579
+Event type:  FROMNETWORK
+Event entity: 67890
+B: Receiving the data and sending the acknowledgement nnnnnnnnnnnnnnnnnnnn
+B: deliverData: data received at 67890:
+udtSend: seqNum: 1 ackNum: 1 checksum: 2 payload: 
+udtSend: Scheduling arrival on other side: at time   40144.88642111022
+---------------------------------------
+
+EVENT time: 40144.88642111022
+Event type:  FROMNETWORK
+Event entity: 12345
+A: receiving an acknowledgement packet
+stopTimer: stopping timer at 40144.88642111022
