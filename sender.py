@@ -21,7 +21,7 @@ class sender:
         # checks if an ACK is duplicate or not
         # similar to the corresponding function in receiver side
         # 2 points
-        if packet.ackNum == self.currentSeqNum:
+        if packet.seqNum == self.currentSeqNum:
             return False
         return True
 
@@ -31,7 +31,6 @@ class sender:
         # 2 points
         self.currentSeqNum += 1
         self.currentSeqNum %= 2
-        self.ACK = self.currentSeqNum
         return self.currentSeqNum
 
     def __init__(self, entityName, ns):
@@ -57,6 +56,8 @@ class sender:
 
     def output(self, message):
         # if current packet is not transmitted ignore the message
+        if self.currentPacket is not None:
+            return
         # else prepare a packet and send it through the network layer
         # call utdSend
         # start the timer
@@ -67,7 +68,7 @@ class sender:
 
         self.currentPacket = Packet(self.currentSeqNum, self.ACK, checksum, message.data)
         self.networkSimulator.udtSend(A, self.currentPacket)
-        self.networkSimulator.startTimer(A, self.RTT)
+        self.networkSimulator.startTimer(A, 2 * self.RTT)
         return
 
     def input(self, packet):

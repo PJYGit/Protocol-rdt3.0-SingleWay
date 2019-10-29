@@ -51,8 +51,7 @@ class receiver:
         # If packet is corrupted or duplicate: send ACK with wrong sequence number.
         if self.isCorrupted(packet) or self.isDuplicate(packet):
             packet.payload = ''
-            packet.ackNum += 1
-            packet.ackNum %= 2
+            packet.ackNum = 1
             packet.checksum = packet.seqNum + packet.ackNum
             self.networkSimulator.udtSend(B, packet)
             return
@@ -62,8 +61,15 @@ class receiver:
         # 12 points
         self.networkSimulator.deliverData(B, packet.payload)
         packet.payload = ''
+        packet.ackNum = 1
         packet.checksum = packet.seqNum + packet.ackNum
         self.networkSimulator.udtSend(B, packet)
         self.expectedSeqNum = self.getNextExpectedSeqNum()
 
         return
+
+
+f1 = open('output1-lost=0.1-corrupt=0-trace=1', 'r')
+f2 = open('output1', 'r')
+if f1.read() == f2.read():
+    print('yes')
