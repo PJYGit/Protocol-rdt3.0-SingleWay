@@ -67,9 +67,3 @@ class receiver:
         self.expectedSeqNum = self.getNextExpectedSeqNum()
 
         return
-
-
-f1 = open('output1-lost=0.1-corrupt=0-trace=1', 'r')
-f2 = open('output1', 'r')
-if f1.read() == f2.read():
-    print('yes')
